@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: default
+  datasource:
+    hikari:
+      driver-class-name: org.mariadb.jdbc.Driver
+      jdbc-url: jdbc:mariadb://127.0.0.1:3306/board
+      username: root
+      password: 1234
+      connection-test-query: select 1
+
+mybatis:
+  mapper-locations: classpath:mapper/*-mapper.xml
+#server:
+#  port: 8081
